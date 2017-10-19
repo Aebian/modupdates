@@ -1,0 +1,14 @@
+{% set theList = __SELF__.list %}
+
+
+
+<h6>Teeest!</h6>
+
+<table>
+{% for issue in issuelist.theList %}
+<tr>
+<td><a href="{{ issue.web_url }}"><strong>{{ issue.title }}</strong></a></td>
+</tr>
+{% endfor %}
+</table>
+
