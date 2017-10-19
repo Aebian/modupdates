@@ -1,14 +1,9 @@
 {% set theList = __SELF__.list %}
 
-
-
-<h6>The current Updates:</h6>
-
 <table>
-{% for issue in issuelist.theList %}
+{% for issue in __SELF__.theList %}
 <tr>
 <td><a href="{{ issue.web_url }}"><strong>{{ issue.title }}</strong></a></td>
 </tr>
 {% endfor %}
 </table>
-
