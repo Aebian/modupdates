@@ -1,6 +1,6 @@
 # OctoberCMS Mod Updates Plugin
 
-A plugin which utilizes to GitLab API to show informations about certain issues for my friends at Gruppe W (https://gruppe-w.de).
+#### A plugin which utilizes to GitLab API to show informations about certain issues for my friends at Gruppe W  (https://gruppe-w.de).
 ---
 ## Details
 This plugin will provide a components to display certain issues of a project based on the [GitLab API v4](https://gitlab.gruppe-w.de/api/v4/). 
