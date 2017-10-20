@@ -34,10 +34,12 @@ class IssueList extends PaginationComponent
                 'title'       => 'aebian.modupdates::lang.list.tracker_title',
                 'description' => 'aebian.modupdates::lang.list.tracker_desc'
             ],
-               'label'      => [
+            
+            'labels'      => [
                 'title'       => 'aebian.modupdates::lang.list.label_title',
                 'description' => 'aebian.modupdates::lang.list.label_desc'
             ],
+
             'state'      => [
                 'title'       => 'aebian.modupdates::lang.list.state_title',
                 'description' => 'aebian.modupdates::lang.list.state_desc',
@@ -48,7 +50,8 @@ class IssueList extends PaginationComponent
                     'closed' => 'aebian.modupdates::lang.list.state_opt_closed'
                 ]
             ],
-                'accesstoken'      => [
+            
+            'accesstoken'      => [
                 'title'       => 'aebian.modupdates::lang.list.accesstoken_title',
                 'description' => 'aebian.modupdates::lang.list.accesstoken_desc'
             ], 
@@ -61,8 +64,7 @@ class IssueList extends PaginationComponent
     public function onRun()
     {
         $this->theList = $this->getGitLab()->issues(
-            $this->property('tracker'), $this->property('label'), $this->property('state'), $this->property('accesstoken'), $this->property('per_page')
+            $this->property('tracker'), $this->property('labels'), $this->property('state'), $this->property('accesstoken'), $this->property('per_page')
         );  
-        dd($this->theList);
     }
 }
