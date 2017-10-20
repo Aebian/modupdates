@@ -44,8 +44,8 @@ class IssueList extends PaginationComponent
                 'type'        => 'dropdown',
                 'options'     => [
                     'all'    => 'aebian.modupdates::lang.list.state_opt_all',
-                    'owner'  => 'aebian.modupdates::lang.list.state_opt_open',
-                    'member' => 'aebian.modupdates::lang.list.state_opt_closed'
+                    'opened'  => 'aebian.modupdates::lang.list.state_opt_open',
+                    'closed' => 'aebian.modupdates::lang.list.state_opt_closed'
                 ]
             ],
                 'accesstoken'      => [
@@ -63,5 +63,6 @@ class IssueList extends PaginationComponent
         $this->theList = $this->getGitLab()->issues(
             $this->property('tracker'), $this->property('label'), $this->property('state'), $this->property('accesstoken'), $this->property('per_page')
         );  
+        dd($this->theList);
     }
 }
