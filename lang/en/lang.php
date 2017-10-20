@@ -19,7 +19,7 @@ return [
         'state_title'         => 'State',
         'state_desc'          => 'Whether open or vlosed issues should be displayed. ',
         'state_opt_all'       => 'all',
-        'state_opt_open'      => 'open',
+        'state_opt_open'      => 'opened',
         'state_opt_closed'    => 'closed',
         'accesstoken_title'   => 'Access Token',
         'accesstoken_desc'    => 'The Token that will be used to authetenticate against the API'
