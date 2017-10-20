@@ -18,7 +18,7 @@ List public issues for the specified project.
 |     Name      |   Type   |                                                 Description                                                 |
 |:------------  |:---------|:------------------------------------------------------------------------------------------------------------|
 | `tracker`     | `string` | The name of the project to get issues from.                                                                 |
-| `label`       | `string` | The name of the label from which issues should be displayed with.                                           |
+| `labels`      | `string` | The name of the label from which issues should be displayed with.                                           |
 | `state`       | `string` | Wheather open or closed issues or even all should be displayed.                                             |
 | `accesstoken` | `string` | The access token (private_token) for authentication against the API.
 
