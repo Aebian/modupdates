@@ -24,16 +24,16 @@ class GitLab
      * GET /project/:project_name/issues  
      *
      * @param string $tracker
-     * @param string $label
+     * @param string $labels
      * @param string $state
      * @param string $accesstoken
      * @return stdObj[]
      */
-    public function issues($tracker,$label, $state, $accesstoken, $per_page = 50) 
+    public function issues($tracker,$labels, $state, $accesstoken, $per_page = 50) 
     {
         return $this->fetchCache(
-            "/projects/$tracker/issues?labels" . http_build_query([
-                'label'  => $label,
+            "/projects/$tracker/issues?" . http_build_query([
+                'labels'  => $labels,
                 'state'  => $state,
                 'private_token'  => $accesstoken,
                 'per_page'  => $per_page,
