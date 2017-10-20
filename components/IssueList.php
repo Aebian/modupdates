@@ -63,6 +63,5 @@ class IssueList extends PaginationComponent
         $this->theList = $this->getGitLab()->issues(
             $this->property('tracker'), $this->property('label'), $this->property('state'), $this->property('accesstoken'), $this->property('per_page')
         );  
-        dd($this->theList);
     }
 }
